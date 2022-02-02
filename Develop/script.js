@@ -1,4 +1,11 @@
 var currentDate = moment().format("dddd, MMMM Do YYYY");
-console.log(currentDate);
-$("#currentDay").innerHTML = currentDate;
+
+
+
+$( document ).ready(function() {
+    $("#currentDay").innerHTML = currentDate;
+    console.log(currentDate);
+});
+
+
 // document.getElementById('currentDay').innerHTML = currentDate;
