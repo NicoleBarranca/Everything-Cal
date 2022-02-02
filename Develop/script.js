@@ -1,3 +1,3 @@
-var currentDate = moment().format("dddd, MMMM Do YYYY");
+// var currentDate = moment().format("dddd, MMMM Do YYYY");
 
-
+// $(currentDate).
