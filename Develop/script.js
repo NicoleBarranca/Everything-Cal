@@ -19,6 +19,7 @@ var timeSlots = [
     "5",
 ];
 
+
 timeSlots.forEach(function (timeSlot) {
     var timeListContainer = document.createElement('div')
     var timeList = document.createElement('div')
@@ -59,15 +60,13 @@ console.log(saveBtns)
 saveBtns.each(function (index) {
     $(saveBtns[index]).on("click", function () {
         alert("button Clicked with index# " + index)
-        saveData();
+        var time = $(this).parent().attr('id')
+        var value = $('description').val();
+        localStorage.setItem(time, value);
     })
 });
 
-function saveData(){
-        var time = $('.hour').val();
-        var value = $('description').val();
-        localStorage.setItem(time, value);
-};
+
     
 
   
