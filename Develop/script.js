@@ -12,11 +12,15 @@ console.log(saveBtns)
 saveBtns.each(function( index ) {
     $(saveBtns[index]).on("click", function() {
         alert("button Clicked with index# " + index)
+        localStorage.textAreas(index)
     })
 });
 //sibling
 var textAreas = $(".description");
 console.log(textAreas)
+
+
+
 
 // try rewriting this code to fit your array needs
 // localStorage only supports strings. Use JSON.stringify() and JSON.parse().
@@ -42,7 +46,7 @@ console.log(textAreas)
 
 // for(var i = 0; i < animals.length; i++) {
 //     console.log(animals[i])
-}
+// }
 
 // associate buttons with appropriate text areas
 
