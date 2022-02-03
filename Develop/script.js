@@ -1,5 +1,10 @@
 var currentDate = moment().format("dddd, MMMM Do YYYY");
 
+
+$( document ).ready(function() {
+    console.log( "ready!" );
+});
+
 $( document ).ready(function() {
     $("#currentDay").text(currentDate);
 });
@@ -11,13 +16,13 @@ console.log(saveBtns)
 saveBtns.each(function( index ) {
     $(saveBtns[index]).on("click", function() {
         alert("button Clicked with index# " + index)
-        localStorage.textAreas(".description")
+      //  localStorage.textAreas(".description")
     })
 
-    var time = $('.hour')
-    var value = $('#9').val();
+    // var time = $('.hour')
+    // var value = $('#9').val();
 
-    localStorage.setItem();
+    // localStorage.setItem();
 
 });
 
