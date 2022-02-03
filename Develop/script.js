@@ -5,7 +5,6 @@ $( document ).ready(function() {
 });
 
 // add event listeners to individual buttons
-// array
 var saveBtns = $(".saveBtn");
 console.log(saveBtns)
 
@@ -14,10 +13,24 @@ saveBtns.each(function( index ) {
         alert("button Clicked with index# " + index)
         localStorage.textAreas(".description")
     })
+
+    var time = $('.hour')
+    var value = $('#9').val();
+
+    localStorage.setItem();
+    
 });
-//sibling
+
 var textAreas = $(".description");
 console.log(textAreas)
+
+
+
+
+
+
+
+
 
 // try rewriting this code to fit your array needs
 // localStorage only supports strings. Use JSON.stringify() and JSON.parse().
