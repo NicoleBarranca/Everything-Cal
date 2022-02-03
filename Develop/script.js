@@ -11,7 +11,7 @@ console.log(saveBtns)
 
 saveBtns.each(function( index ) {
     $(saveBtns[index]).on("click", function() {
-        alert("button Clicked with index# " + index)
+        // alert("button Clicked with index# " + index)
         localStorage.textAreas(index)
     })
 });
