@@ -1,9 +1,7 @@
-var currentDate = moment().format("dddd, MMMM Do YYYY");
-
-
 $( document ).ready(function() {
-    console.log( "ready!" );
-});
+    
+    var currentDate = moment().format("dddd, MMMM Do YYYY");
+
 
 $( document ).ready(function() {
     $("#currentDay").text(currentDate);
@@ -28,14 +26,6 @@ saveBtns.each(function( index ) {
 
 var textAreas = $(".description");
 console.log(textAreas)
-
-
-
-
-
-
-
-
 
 // try rewriting this code to fit your array needs
 // localStorage only supports strings. Use JSON.stringify() and JSON.parse().
@@ -64,3 +54,4 @@ console.log(textAreas)
 // make sure all text areas have correct background color
 
 // document.getElementById('currentDay').innerHTML = currentDate;
+});
