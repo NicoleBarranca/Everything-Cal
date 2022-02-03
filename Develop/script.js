@@ -18,7 +18,7 @@ saveBtns.each(function( index ) {
     var value = $('#9').val();
 
     localStorage.setItem();
-    
+
 });
 
 var textAreas = $(".description");
