@@ -13,7 +13,7 @@ console.log(saveBtns)
 
 saveBtns.each(function() {
     $(saveBtns).on("click", function() {
-       alert("button Clicked with index# " + index)
+    //    alert("button Clicked with index# " + index)
       //  localStorage.textAreas(".description")
     })
 
