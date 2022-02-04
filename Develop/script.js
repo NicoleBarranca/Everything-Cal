@@ -1,7 +1,10 @@
 $(document).ready(function () {
     $("#currentDay").text(currentDate);
     var currentDate = moment().format("dddd, MMMM Do YYYY");
-
+    var currentHour = moment().format("H");
+    
+    // get local storage data - function
+    ///loop
 
     $(".saveBtn").on("click", function () {
         var value = $(this).prev().val();
@@ -12,8 +15,14 @@ $(document).ready(function () {
     }
     )
 
-
-
+    $(".description").each(function(){
+        if (Number($(this).attr('id')) < Number(currentHour)){
+            $(this).addClass("past")
+        } else if (Number($(this).attr('id')) === Number(currentHour)){
+                $(this).addClass("present")
+        } else $(this).addClass("future")
+    })
+    
 
     //    alert("button Clicked with index# " + index)
     //  localStorage.textAreas(".description")
