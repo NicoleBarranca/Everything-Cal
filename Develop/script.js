@@ -11,9 +11,9 @@ $( document ).ready(function() {
 var saveBtns = $(".saveBtn");
 console.log(saveBtns)
 
-saveBtns.each(function( index ) {
-    $(saveBtns[index]).on("click", function() {
-        alert("button Clicked with index# " + index)
+saveBtns.each(function() {
+    $(saveBtns).on("click", function() {
+       alert("button Clicked with index# " + index)
       //  localStorage.textAreas(".description")
     })
 
@@ -24,8 +24,14 @@ saveBtns.each(function( index ) {
 
 });
 
-var textAreas = $(".description");
-console.log(textAreas)
+
+
+
+
+
+
+// var textAreas = $(".description");
+// console.log(textAreas)
 
 // try rewriting this code to fit your array needs
 // localStorage only supports strings. Use JSON.stringify() and JSON.parse().
