@@ -1,63 +1,51 @@
-$( document ).ready(function() {
-    
+$(document).ready(function () {
+    $("#currentDay").text(currentDate);
     var currentDate = moment().format("dddd, MMMM Do YYYY");
 
 
-$( document ).ready(function() {
-    $("#currentDay").text(currentDate);
-});
+    $(".saveBtn").on("click", function () {
+        var value = $(this).prev().val();
+        var key = $(this).parent().attr('id');
 
-// add event listeners to individual buttons
-var saveBtns = $(".saveBtn");
-console.log(saveBtns)
+        localStorage.setItem(key, value);
+        // console.log(value)
+    }
+    )
 
-saveBtns.each(function() {
-    $(saveBtns).on("click", function() {
+
+
+
     //    alert("button Clicked with index# " + index)
-      //  localStorage.textAreas(".description")
-    })
+    //  localStorage.textAreas(".description")
 
-    // var time = $('.hour')
-    // var value = $('#9').val();
+    // var textAreas = $(".description");
+    // console.log(textAreas)
 
-    // localStorage.setItem();
+    // try rewriting this code to fit your array needs
+    // localStorage only supports strings. Use JSON.stringify() and JSON.parse().
 
-});
+    // var names = [];
+    // names[0] = prompt("New member name?");
+    // localStorage.setItem("names", JSON.stringify(names));
 
+    // //...
+    // var storedNames = JSON.parse(localStorage.getItem("names"));
 
+    // var animals = ["dog", "cat", "monkey", "beaver"]
 
+    // $(animals).each(function(i) {
+    //     console.log(animals[i])
+    // })
 
+    // for(var i = 0; i < animals.length; i++) {
+    //     console.log(animals[i])
+    // }
 
+    // associate buttons with appropriate text areas
 
+    // based on the indivduls button we want to save appropriate text area value to local storage
 
-// var textAreas = $(".description");
-// console.log(textAreas)
+    // make sure all text areas have correct background color
 
-// try rewriting this code to fit your array needs
-// localStorage only supports strings. Use JSON.stringify() and JSON.parse().
-
-// var names = [];
-// names[0] = prompt("New member name?");
-// localStorage.setItem("names", JSON.stringify(names));
-
-// //...
-// var storedNames = JSON.parse(localStorage.getItem("names"));
-
-// var animals = ["dog", "cat", "monkey", "beaver"]
-
-// $(animals).each(function(i) {
-//     console.log(animals[i])
-// })
-
-// for(var i = 0; i < animals.length; i++) {
-//     console.log(animals[i])
-// }
-
-// associate buttons with appropriate text areas
-
-// based on the indivduls button we want to save appropriate text area value to local storage
-
-// make sure all text areas have correct background color
-
-// document.getElementById('currentDay').innerHTML = currentDate;
+    // document.getElementById('currentDay').innerHTML = currentDate;
 });
